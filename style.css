@@ -1,0 +1,842 @@
+*{margin: 0;
+box-sizing: border-box;
+padding: 0;
+}
+
+body{background-color: #0d0014;
+overflow-x: hidden;
+font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+#principal{ height: 92vh;
+background-image: url(h1_hero1.jpg.webp);
+background-color: rgba(0, 0, 0, 45%);
+background-blend-mode: multiply;}
+
+header>img{margin-left: 15%;
+margin-top: 4vh;
+vertical-align: middle;
+margin-bottom: 4vh;}
+
+.telefone{font-size: 18px;
+color: white;
+text-decoration: none;
+margin-left: 40%}
+
+.btn_free{
+margin-left: 2%;
+background-color: #d6a04c;
+padding: 14px 24px;
+border: solid #d6a04c 1px;
+color: white;
+text-decoration: none;}
+
+.btn_free:hover{
+    background-color: transparent;
+    border: solid #d6a04c 1px;
+    color: #d6a04c;
+}
+
+#menu{width: 2%;
+margin-left: 2%;
+height: 25px;
+display: inline-block;
+position: relative;}
+
+#menu>span{border: solid white 1px;
+display: inline-block;
+width: 90%;}
+
+aside{background-color: #111111;
+width: 330px;
+height: 100%;
+padding: 140px 50px 10px 59px;
+position: fixed;
+top: 0;
+right: -380px;
+transition: 1s;
+z-index: 999}
+
+aside>ul{list-style: none;
+padding: 0;
+color: white;}
+
+#local{width: 100%;
+height: 10vh;
+position: absolute;
+color: #E9E3D9;
+top: 36%;
+left: 21%;
+font-size: 16px;}
+
+#frase_pro{color: #E9E3D9;
+width: 30%;
+position: absolute;
+top: 40%;
+left: 21%;
+font-size: 60px;
+font-family: "Cabin", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+font-variation-settings: "wdth" 100;
+}
+
+#menuCheck{position: absolute;
+width: 140%;
+height: 140%;
+left: -25%;
+top: 20%;
+z-index: 9999999;
+opacity: 0;}
+
+#menuCheck:checked{
+  position: absolute;
+  left: 90%;
+  top: 0%;
+}
+
+#menuCheck:checked+aside{right: 0px;
+text-align: center;
+}
+
+ul{position: absolute;
+top: 15%;
+left: 40%;
+text-align: center;}
+
+li{padding-top: 40px;
+font-size: 1.6rem;}
+
+#x1{border: solid white 1px;
+  display: inline-block;
+  width: 8%;
+  position: relative;
+  transform: rotateZ(45deg);
+  position: absolute;
+  right: 80%;
+  top: 5%;}
+
+#x2{border: solid white 1px;
+  display: inline-block;
+  width: 8%;
+  position: relative;
+  transform: rotateZ(-45deg);
+  position: absolute;
+  right: 80%;
+  top: 5%;}
+
+  #PlayReel{color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 47%;
+  left: 65%;
+  text-align: center;
+  width: 15%;
+  height: 5%;}
+
+  #botão{
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 84px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55%;
+    right: 0%;
+}
+
+#botão::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: inherit;
+  border: 1px solid #D6A04C;}
+
+#botão::after{
+    position: absolute;
+    border: 59px solid rgba(255, 255, 255, 0.06);
+    content: "";
+    border-radius: 50%;
+    left: -25px;
+    top: -25px;
+    right: 0;
+    z-index: 0;}
+
+#Tr1{border: solid #D6A04C 1px;
+  display: inline-block;
+  width: 30%;
+  transform: rotateZ(30deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 45%;
+  right: 28%;
+}
+
+#Tr2{
+  border: solid #D6A04C 1px;
+  display: inline-block;
+  width: 30%;
+  transform: rotateZ(-30deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 58%;
+  right: 28%;
+}
+
+#Tr3{
+  border: solid #D6A04C 1px;
+  display: inline-block;
+  width: 30%;
+  transform: rotateZ(90deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 51%;
+  right: 41%;
+}
+
+#botão:hover{
+  background-color: #D6A04C;
+  transition: 0.5s;
+}
+
+#botão:hover #Tr1{
+  border-color: white;
+  transition: 0.5s;
+}
+
+#botão:hover #Tr2{
+  border-color: white;
+  transition: 0.5s;
+}
+
+#botão:hover #Tr3{
+  border-color: white;
+  transition: 0.5s;
+}
+
+#descrição{
+  background-color: #D6A04C;
+  width: 50%;
+  height: 10%;
+  z-index: 999;
+  position: absolute;
+  right: 0%;
+  bottom: 8%;
+}
+
+#texto-descrição{
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 10vb;
+  padding-top: 30px;
+  padding-left: 40px;
+  width: 40%;
+}
+
+#texto-descrição2{
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 10vb;
+  padding-top: 30px;
+  padding-left: 40px;
+  width: 40%;
+  position: absolute;
+  right: 20%;
+  top: 2%;
+}
+
+#About-Us{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 14%;
+  left: 16%;
+  font-weight: bold;
+
+}
+
+
+
+#baixo{width: 100%;
+height: 100vb;
+top: 100%;
+position: relative;}
+
+#belara{
+  width: 20%;
+  height: 25%;
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  left: 21%;
+  top: 25%;
+
+}
+
+#about1{
+  position: absolute;
+  left: 0%;
+  top: 80%;
+  width: 100%;
+}
+
+#studio{
+  color: white;
+  width: 18%;
+  right: 35%;
+  top: 25%;
+  position: absolute;
+  font-size: 18px;
+
+}
+
+#learn-more{
+
+  border: 1px solid #D6A04C;
+  background-color: transparent;
+  padding: 14px 32px;
+  font-size: 16px;
+  position: absolute;
+  top: 140%;
+  width: 50%;
+  height: 40%;
+  text-align: center;
+}
+#Learn-more{
+  color: white;
+  text-decoration: none;
+}
+
+#learn-more:hover{
+  background-color: #D6A04C;
+  transition: 0.5s;
+}
+
+#about2{
+  width: 100%;
+  position: absolute;
+  top: 230%;
+}
+
+#we-do{
+  position: absolute;
+  color: white;
+  top: 0%;
+  font-size: 44px;
+  font-weight: bold;
+  left: 16%;
+}
+
+#What-we{
+  width: 100%;
+  height: 69vh;
+  position: relative;
+}
+
+#blog1{width: 20%;
+height: 30%;
+position: absolute;
+left: 16%;
+top: 10%;}
+
+#blog1-png{
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+}
+
+#blog2{
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  left: 37%;
+  top: 10%;
+}
+
+#blog2-png{
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+}
+
+#blog3{
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  left: 58%;
+  top: 10%;
+}
+
+#blog3-png{
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+}
+
+#commercial{
+  position: absolute;
+  color: white;
+  top: 180%;
+  font-size: 32px;
+}
+
+#architecture-design{
+  position: absolute;
+  color: white;
+  top: 130%;
+  font-size: 14px;
+}
+
+#residential{
+  position: absolute;
+  color: white;
+  top: 180%;
+  font-size: 32px;
+
+}
+
+#architecture-design2{
+  position: absolute;
+  color: white;
+  top: 130%;
+  font-size: 14px;
+}
+
+#architecture{
+  position: absolute;
+  color: white;
+  top: 180%;
+  font-size: 32px;
+
+}
+
+#architecture-design3{
+  position: absolute;
+  color: white;
+  top: 130%;
+  font-size: 14px;
+
+}
+
+#blog1:hover {
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+#blog1:hover #commercial{
+  color: #D6A04C;
+  transition: 0.5s;
+}
+
+#blog2:hover{
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+#blog2:hover #residential{
+  color: #D6A04C;
+  transition: 0.5s;
+}
+
+#blog3:hover{
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+#blog3:hover #architecture{
+  color: #D6A04C;
+  transition: 0.5s;
+}
+
+#projects-div{
+  position: relative;
+  background-color: #1E1E1E;
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+}
+
+#projects1{
+  width: 68%;
+  position: absolute;
+  display: block;
+  left: 15%;
+  top: 20%;
+}
+
+#project-text{
+  font-size: 215px;
+  -webkit-text-stroke: 2px #E9E3D9;
+  color: transparent;
+  position: relative;
+  left: -17.5%;
+  top: 2.6%;
+}
+
+#casa-la-fundo{
+  background-color: #D6A04C;
+  width: 40%;
+  height: 20%;
+  position: relative;
+  top: 60%;
+  text-align: left;
+  padding-top: 2%;
+  left: 15%;
+  font-size: 32px;
+  color: white;
+  width: 38.5%;
+  padding-left: 3%;
+  z-index: 99;
+}
+
+#casa-la-fundo:hover{
+  background-color: rgb(33, 37, 41);
+  transition: 0.5s;
+}
+
+#casa-la-fundo:hover #casa-la-fundo-cor{
+  color: #D6A04C;
+  transition: 0.5s;
+
+}
+
+#casa-la-fundo:hover #casa-la-desc{
+  color: white;
+}
+
+#casa-la-desc{
+  font-size: 14px;
+  padding-top: 3%;
+}
+
+#botão-setinha{
+  border-radius: 50%;
+  background-color: #e6b059;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 86%;
+  top: 32%;
+}
+
+#seta1{border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 47%;
+  right: 38%;
+}
+
+#seta2{
+  border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(-40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 56%;
+  right: 38%;
+}
+
+#seta3{
+  border: solid white 1px;
+  display: inline-block;
+  width: 20%;
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 51%;
+  right: 41%;
+}
+
+#sindrome-de-down-baixo{
+  height: 90vb;
+  position: relative;
+}
+
+#sindrome-de-down{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+#why-us{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  left: 57%;
+  top: 33%;
+}
+
+#Nakameguro{
+  font-size: 27px;
+  width: 52%;
+  height: 30vb;
+  padding-top: 5%;
+}
+
+#learn-more-why{
+  border: solid #D6A04C 1px;
+  background-color: transparent;
+  position: absolute;
+  color: #D6A04C;
+  text-align: center;
+  width: 20%;
+  height: 15%;
+  font-size: 12px;
+  padding-top: 17px;
+  font-size: 16px;
+  top: 100%;
+}
+
+#buck{
+  width: 100%;
+  height: 594px;
+  background-color: rgb(10, 10, 10);
+  position: relative;
+}
+
+#testi{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+#a-base-for-good-life{
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  width: 38%;
+  left: 32%;
+  top: 37%;
+  text-align: center;
+}
+
+#founder-img{
+  font-size: 16px;
+  position: absolute;
+  left: 48%;
+  top: 55%;
+}
+
+#desc-founder{
+   font-size: 12px;
+   color: white;
+   position: absolute;
+   left: 45%;
+   top: 73%;
+}
+
+#foto-da-cama-baixo{
+  height: 100vb;
+  position: relative;
+}
+
+#single-rooms1-todo{
+  border: solid rgb(75, 75, 75) 1px;
+  width: 70%;
+  text-align: left;
+  position: absolute;
+  left: 15%;
+  height: 30%;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#titulo{
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  top: 	25%;
+}
+
+#desc-sigle-room-1{
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+
+#data-single1{
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}
+
+#seta-single1{
+  border-radius: 50%;
+  background-color: rgb(33, 37, 41);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 86%;
+  top: 32%;
+}
+
+#linha-single-seta1{border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 47%;
+  right: 38%;
+}
+
+#linha-single-seta2{
+  border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(-40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 56%;
+  right: 38%;
+}
+
+#linha-single-seta3{
+  border: solid white 1px;
+  display: inline-block;
+  width: 20%;
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 51%;
+  right: 41%;
+}
+
+#single-rooms1-todo:hover{
+  background-color: rgb(75, 75, 75);
+  transition: 0.5s;
+}
+
+#single-rooms1-todo:hover #desc-sigle-room-1{
+  color: #D6A04C;
+  transition: 0.5s;
+}
+
+#single-rooms1-todo:hover #seta-single1{
+  background-color: #D6A04C;
+  transition: 0.5s;
+}
+
+#single-rooms2-todo{
+  border: solid rgb(75, 75, 75) 1px;
+  width: 70%;
+  text-align: left;
+  position: absolute;
+  left: 15%;
+  height: 30%;
+  padding-top: 30px;
+  padding-left: 30px;
+  top: 35%;
+}
+
+#titulo2{
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  top: 	25%;
+}
+
+#desc-sigle-room-2{
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+
+#data-single2{
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}
+
+#seta-single2{
+  border-radius: 50%;
+  background-color: rgb(33, 37, 41);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 86%;
+  top: 32%;
+}
+
+#linha-single2-seta1{border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 47%;
+  right: 38%;
+}
+
+#linha-single2-seta2{
+  border: solid white 1px;
+  display: inline-block;
+  width: 14%;
+  transform: rotateZ(-40deg);
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 56%;
+  right: 38%;
+}
+
+#linha-single2-seta3{
+  border: solid white 1px;
+  display: inline-block;
+  width: 20%;
+  position: absolute;
+  z-index: 99;
+  position: absolute;
+  top: 51%;
+  right: 41%;
+}
+
+#single-rooms2-todo:hover{
+  background-color: rgb(75, 75, 75);
+  transition: 0.5s;
+}
+
+#single-rooms2-todo:hover #desc-single-room-2{
+  background-color: rgb(75, 75, 75);
+  transition: 0.5s;
+}
+
+#single-rooms2-todo:hover #desc-sigle-room-2{
+  color: #D6A04C;
+  transition: 0.5s;
+}
+
+#single-rooms2-todo:hover #seta-single2{
+  background-color: #D6A04C;
+  transition: 0.5s;
+}
