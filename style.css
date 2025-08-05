@@ -1,328 +1,294 @@
-*{ margin: 0;
+*{
+    margin: 0;
     box-sizing: border-box;
     padding: 0;
-    }
-    
-    #barra-lateral{
-        position: fixed;
-        height: 100vb;
-        width: 5%;
-        background-color: white;
-    }
-    
-    #menu{
-        height: 10%;
-        background-color: #0f0f0f;
-        width: 100%;
-        padding-top: 28px;
-        padding-left: 28px;
-        position: absolute;
-    }
-    
-    #redes-barra{
-        height: 100vb;
-        width: 100%;
-    }
-    
-    #redes-meio{
-        padding-top: 400%;
-        text-align: center;
-    }
-    
-    .padding-img{
-        margin-top: 50px;
-        color: #212529;
-    }
-    
-    #imagens{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        left: 5%;
-    }
-    
-    .imgs{ 
-        background-position: 20% center;
-        background-color: rgba(0, 0, 0, 0.4);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: multiply;
-        flex-grow: 1;
-        transition: 0.5s;
-    }
-    
-    .imgs:hover{
-        flex-grow: 6;
-        transition: 0.5s;
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    .imgs:hover ~ #img1{
-        flex-grow: 1;
-        transition: 0.5s;
-        background-color: rgba(0, 0, 0, 0.4 );
-    }
-    
-    #img1{
-        background-image: url(5.jpg.webp);
-        flex-grow: 6;
-        order: -1;
-        align-content: end;
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    #img2{
-        background-image: url(1.jpg.webp);
-        align-content: end;
-    }
-    
-    #img3{
-        background-image: url(2.jpg.webp);
-        align-content: end;
-    }
-    
-    #img4{
-        background-image: url(3.jpg.webp);
-        align-content: end;
-    }
-    
-    #img5{
-        background-image: url(4.jpg.webp);
-        align-content: end;
-    }
-    
-    .montserrat {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    .elementos-baixo{
-        width: 40%;
-        height: 25vb;
-        position: absolute;
-        top: 70%;
-        display: none;
-    }
-    
-    .people{
-        display: flex;
-        background-color: white;
-        color: #2916e0;
-        font-size: 12px;
-        font-weight: 600;
-        width: 90px;
-        justify-content: center;
-        border-radius: 5px;
-        height: 3vh;
-        margin-left: 50px;
-    }
-    
-    .flavio{
-        font-size: 60px;
-        font-weight: 700;
-        color: #fff;
-        margin-left: 50px;
-    }
-    
-    .img-perfil{
-        border-radius: 50px;
-        margin-left: 50px;
-    }
-    
-    .arthur{
-        display: flex;
-        font-weight: 600;
-        color: #fff;
-        font-size: 24px;
-    }
-    
-    .rose{
-        padding-top: 3px;
-        padding-left: 7px;
-    }
-    
-    .imgs:hover .elementos-baixo{
-        display: block;
-    }  
-    
-    #baixo-img1{
-        display: block;
-        padding-left: 90px;
-    }
-    
-    .imgs:hover ~ #img1 #baixo-img1{
-        display: none;
-    }
-    
-    #task_bar{
-        background-color: white;
-        height: 100vh;
-        width: 90px;
-        position: fixed;
-    }
-    
-    #opcao{
-        background-color: #0f0f0f;
-        height: 90px;
-        width: 90px;
-    }
-    
-    #img_option{
-        position: absolute;
-        top: 2%;
-        left: 25%;
-    }
-    
-    #social_media{
-        position: absolute;
-        top:41%;
-        left: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 255px;
-        width: 18px;
-    }
-    
-    #pag-social-midia{
-        position: absolute;
-        top:80%;
-        left: 18%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 20px;
-        width: 180px;
-    }
-    
-    #check-barra-lateral{
-        opacity: 0;
-        height: 90px;
-        width: 90px;
-        border: none;
-        z-index: 99;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-    }
-    
-    #check-barra-lateral:checked+#paginas{
-        visibility: visible;
-        transition: 0.5s;
-    }
-    
-    #paginas{
-        position: absolute;
-        top: 0%;
-        height: 100%;
-        width: 270px;
-        background-color: rgb(255, 255, 255);
-        z-index: 90;
-        visibility: hidden;
-    }
-    
-    #voltar{
-        background-color: #0f0f0f;
-        height: 90px;
-        width: 90px;
-    }
-    
-    #img-voltar{
-        position: absolute;
-        top: 2%;
-        left: 6%;
-        width: 20%;
-    
-    }
-    
-    #tulen{
-        background-color: #2916E0;
-        width: 180px;
-        height: 90px;
-        position: absolute;
-        top: 0%;
-        left: 33.5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #tulen_att{
-        width: 180px;
-        height: 90px;
-        position: absolute;
-    }
-    
-    #nome-pag{
-        width: 110px;
-        height: 82%;
-        display: flex;
-        justify-self: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .text_pages{
-        text-decoration: none;
-        font-size: 30px;
-        font-family:  "Montserrat", sans-serif;
-        font-weight: 600;
-        color: #B2B2B2;
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-    
-    #home:hover{
-        color: #2916E0;
-        transition: 0.3s;
-    }
-    
-    #about:hover{
-        color: #2916E0;
-        transition: 0.3s;
-    }
-    
-    #gallery:hover{
-        color: #2916E0;
-        transition: 0.3s;
-    }
-    
-    #blog:hover{
-        color: #2916E0;
-        transition: 0.3s;
-    }
-    
-    #contact:hover{
-        color: #2916E0;
-        transition: 0.3s;
-    }
-    
-    #home{
-        color: #2916E0;
-    }
-    
-    .texto-copy{
-        position: absolute;
-        top: 85%;
-        left: 14%;
-        text-align: center;
-        font-size: 19px;
-        color: #636363;
-    }
-    
-    .ti-heart{
-        color: #e21010;
-        font-size: 16px;
-    }
-    
-    #colorib{
-        text-decoration: none;
-        color: #B2B2B2;
-    }
-    
-    #colorib:hover {
-        color: #2916E0;
-    }
+}
+
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#header{
+    width: 100%;
+    height: 178px;
+    background-color: #61ADA0;
+}
+
+#info-header{
+    padding-top: 0.7%;
+    padding-left: 0.7%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo-principal{
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+}
+
+#div-contato{
+    width: 195.13px;
+    height: 61.72px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 20px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-contato{
+    height: 61.72px;
+    margin-left: 15%;
+}
+
+#div-produtos{
+    width: 225.99px;
+    height: 61.72px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 20px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-produtos{
+    height: 61.72px;
+    margin-left: 3%;
+}
+
+#div-quem-somos{
+    width: 286.72px;
+    height: 61.72px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 20px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-quem-somos{
+    height: 61.72px;
+    margin-left: 3%;
+}
+
+#div-carrinho{
+    width: 208.07px;
+    height: 61.72px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 20px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-carrinho{
+    height: 61.72px;
+    margin-left: 3%;
+}
+
+#div-login{
+    width: 124.45px;
+    height: 61.72px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 20px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-login{
+    height: 61.72px;
+    margin-left: 3%;
+}
+
+#div-lupa{
+    width: 95.57px;
+    height: 92.59px;
+    background-color: #EFF3CD;
+    text-align: center;
+    padding-top: 0.5%;
+    border-radius: 50px;
+    font-size: 48px;
+    display: inline-block;
+    color: black;
+    box-shadow: -5px 5px rgba(0, 0, 0, 50%);
+    transition: 0.3s all;
+}
+
+#a-lupa{
+    height: 92.59px;
+    margin-left: 3%;
+    border-radius: 50px;
+}
+
+#lupa{
+    width: 60px;
+    padding-top: 15%;
+}
+
+#div-contato:hover{
+    background-color: #B2D5BA;
+}
+
+#div-produtos:hover{
+    background-color: #B2D5BA;
+}
+
+#div-quem-somos:hover{
+    background-color: #B2D5BA;
+}
+
+#div-carrinho:hover{
+    background-color: #B2D5BA;
+
+}
+
+#div-login:hover{
+    background-color: #B2D5BA;
+}
+
+#div-lupa:hover{
+    background-color: #B2D5BA;
+}/*codigo header*/
+
+#imagem-corpo{
+    width: 100%;
+}
+
+#monitor-espaço{
+    width: 446px;
+    height: 564px;
+    margin: 6% 0% 0% 4%;
+    text-align: center;
+    display: inline-block;
+}
+
+#monitor{
+    width: 446px;
+    height: 297px;
+}
+
+#nome-monitor{
+    font-size: 32px;
+    padding-top: 5%;
+}
+
+#monitor-desconto{
+    font-size: 40px;
+    color: #8C8C8C;
+    padding-top: 5%;
+}
+
+#monitor-valor{
+    font-size: 64px;
+    padding-top: 5%;
+}
+
+#teclado-espaço{
+    width: 446px;
+    height: 564px;
+    margin: 6% 0% 0% 11%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#teclado{
+    width: 446px;
+    height: 297px;
+}
+
+#nome-teclado{
+    font-size: 32px;
+    padding-top: 5%;
+}
+
+#teclado-desconto{
+    font-size: 40px;
+    color: #8C8C8C;
+    padding-top: 5%;
+}
+
+#teclado-valor{
+    font-size: 64px;
+    padding-top: 5%;
+}
+
+#mouse-espaço{
+    width: 446px;
+    height: 564px;
+    margin: 6% 0% 0% 11%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mouse{
+    width: 446px;
+    height: 297px;
+}
+
+#nome-mouse{
+    font-size: 32px;
+    padding-top: 5%;
+}
+
+#mouse-desconto{
+    font-size: 40px;
+    color: #8C8C8C;
+    padding-top: 5%;
+}
+
+#mouse-valor{
+    font-size: 64px;
+    padding-top: 5%;
+}
+
+#roda-pe{ /*roda pe*/
+    width: 100%;
+    background-color: #61ADA0;
+    height: 157px;
+    margin-top: 6.8%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    vertical-align: top;
+}
+
+#logo-roda-pe{
+    width: 135px;
+    height: 135px;
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    font-size: 24px;
+    margin: 30px 0px 0px 30px;
+}
